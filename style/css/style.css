@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Main content */
+main {
+    width: 92%;
+    max-width: 1400px;
+    margin: 35px auto;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #1f3c88;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Tableau */
+tableau-viz {
+    width: 100%;
+    height: 800px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    tableau-viz {
+        height: 650px;
+    }
+}
