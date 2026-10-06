@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India's Agricultural Crop Production Analysis</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>India's Agricultural Crop Production Analysis</h1>
+        <p>Tableau Dashboard and Story Integration</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Explore Agricultural Production in India</h2>
+
+            <p>
+                Explore agricultural crop production data from
+                1997–98 to 2020–21 through interactive Tableau
+                visualizations.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Interactive Dashboard</h2>
+
+            <p>
+                Explore crop production trends, state-wise production,
+                seasonal patterns, production efficiency and district-level
+                analysis.
+            </p>
+
+            <tableau-viz
+                id="dashboardViz"
+                src="https://public.tableau.com/views/India_Agricultural_Crop_Production_Analysis_17911806861000/IndiaAgriculturalCropProductionDashboard"
+                toolbar="bottom"
+                hide-tabs>
+            </tableau-viz>
+        </section>
+
+        <section class="card">
+            <h2>Data Story</h2>
+
+            <p>
+                Follow the six-scene Tableau Story to understand the major
+                insights from the agricultural production analysis.
+            </p>
+
+            <tableau-viz
+                id="storyViz"
+                src="https://public.tableau.com/views/IndiaAgriculturalCropProductionAnalysis_17912054279220/AgriculturalProductionAnalysisStory"
+                toolbar="bottom"
+                hide-tabs>
+            </tableau-viz>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Developed by Sujal Dhumal | Data Analytics with Tableau</p>
+    </footer>
+
+</body>
+</html>
